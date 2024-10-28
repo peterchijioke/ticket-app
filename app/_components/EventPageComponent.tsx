@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import CustomImage from "@/components/ui/CustomImage";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Minus, Plus, Share, Share2 } from "lucide-react";
+import { Minus, Plus, Share2 } from "lucide-react";
 import Link from "next/link";
 
 export default function EventPage() {
