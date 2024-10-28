@@ -4,9 +4,9 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import Link from "next/link";
-import { SVGProps } from "react";
+import { JSX, SVGProps } from "react";
 
-export default function BottomTab() {
+export default function BottomTabComponent() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 flex h-16 w-full items-center justify-around border-t bg-white dark:border-gray-800 dark:bg-gray-950">
       <Link

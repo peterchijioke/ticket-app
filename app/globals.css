@@ -1,12 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './fonts/font/Gilroy.css';
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Gilroy-Regular";
 }
-
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot");
+    src: url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy-Regular")format("svg");
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,8 +73,10 @@ body {
 @layer base {
   * {
     @apply border-border;
+  font-family: "Gilroy-Regular";
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Gilroy-Regular";
   }
 }
