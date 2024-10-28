@@ -178,9 +178,11 @@ export default function EventPage() {
                     </Button>
                   </div>
                 </div>
-                <Button className=" bg-white dark:bg-foreground text-black dark:text-foreground font-semibold">
-                  Get Ticket
-                </Button>
+                <div className="w-full justify-center flex flex-row">
+                  <Button className=" bg-white w-full md:w-1/2 hover:bg-inherit  self-center dark:bg-foreground text-black dark:text-foreground font-semibold">
+                    Get Ticket
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -216,7 +218,7 @@ export default function EventPage() {
             </div>
           </div>
         </div>
-        <div className=" h-24 w-full bg-white dark:bg-foreground py-2 shadow-md mt-auto px-5 flex items-center justify-between gap-2 ">
+        <div className=" h-24 w-full bg-white dark:bg-foreground py-2 shadow-md my-8 mt-auto px-6 md:px-36 flex items-center justify-between gap-2 ">
           <Button
             variant={"outline"}
             className=" text-sm text-black w-full"
