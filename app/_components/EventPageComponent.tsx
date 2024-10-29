@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function EventPage() {
   return (
     <Fragment>
-      <div className="bg-white h-screen text-white relative ">
+      <div className="bg-white pt-16 h-screen text-white relative ">
         <CustomImage
           className=" w-full max-h-min md:h-[40rem]"
           src="/images/bg.png"

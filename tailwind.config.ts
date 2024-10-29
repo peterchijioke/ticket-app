@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+			 backgroundImage: {
+        'subtract': "url('/Subtract.svg')"
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
