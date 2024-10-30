@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import CustomImage from "@/components/ui/CustomImage";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Minus, Plus, Share2 } from "lucide-react";
+import { Apple, MapPin, Minus, Plus, Share2 } from "lucide-react";
 import Link from "next/link";
 import BottomTabComponent from "@/components/ui/bottom-tab";
 
@@ -10,50 +10,74 @@ export default function PaymentPageComponent() {
   return (
     <Fragment>
       <div className="bg-white h-screen text-white relative">
-        <div className=" relative h-screen w-full px-5">
-          <div className="  pb-6 bg bg-[#303237] rounded-b-md mt-20 relative">
-            <CustomImage
-              src="/images/bg.png"
-              alt="Event Banner"
-              className="rounded-b-3xl h-44 w-full"
-            />
-            <div className="w-full flex row items-center justify-between">
-              <div className=" h-8 w-8 bg-white rounded-r-full" />
+        <div className=" w-full pt-24 block md:hidden px-5">
+          <div className=" flex flex-row items-center gap-2">
+            <div className="w-1/2">
               <CustomImage
-                src="/line.svg"
+                src="/images/bg.png"
                 alt="Event hhh"
-                className=" w-[90%]"
+                className=" h-full rounded-lg"
               />
-              <div className=" h-8 w-8 bg-white rounded-l-full" />
             </div>
-            <div className="flex flex-col w-full h-fit pb-3 px-2 ">
-              <div className="  flex-grow relative flex items-center flex-col">
-                <span className=" text-xl font-semibold">Taboo Festival</span>
-                <div className=" w-full px-2 py-2">
-                  <span className=" text-xs">
-                    Wednesday, 20 Nov 2019, 15:00
-                  </span>
-                  <div className=" flex flex-col gap-1 py-2">
-                    <span className=" text-xs font-semibold">Seat</span>
-                    <span className=" text-lg font-semibold">G3, G4</span>
-                    <span className=" text-xs">Guest</span>
-                    <span className=" text-sm font-semibold">Conea Adrian</span>
-                    <span className=" text-xs">Tickets</span>
-                    <span className=" text-sm font-semibold">5× Standard</span>
-                  </div>
-                </div>
-                <div className=" mt-auto w-full flex flex-col pt-32 px-2">
-                  <span className=" text-sm">Actual Pay</span>
-                  <span className=" text-xl font-semibold">800 Lei</span>
-                </div>
-              </div>
+            <div className=" flex flex-col gap-1 w-full">
+              <span className=" font-semibold text-sm text-black">
+                RATU ILMU HITAM
+              </span>
+              <span className=" text-[10px] text-black flex flex-row items-center">
+                <MapPin className="w-4 h-4" />
+                XXI Ambarukmo Plaza, Studio 1
+              </span>
+              <span className=" text-xs text-[#676767] flex flex-row items-center">
+                24 Oct at 18:30 CEST
+              </span>
             </div>
           </div>
-          <div className=" w-full flex justify-center py-4">
-            <Button className=" bg-[#303237] hover:bg-[#303237]">
-              Vezi QR-cod
+          <div className="w-full">
+            <span className=" text-xs text-black">Tickets</span>
+          </div>
+          <div className="w-full flex justify-between items-center py-3">
+            <span className=" text-xs text-black font-semibold">
+              5× Standard
+            </span>
+            <span className=" text-xs text-black">$34.00</span>
+          </div>
+        </div>
+        <div className=" h-[1px] bg-[#333333] w-full" />
+        <div className="w-full flex justify-between items-center py-3 px-5">
+          <span className=" text-xs text-black font-semibold">tandard</span>
+          <span className=" text-xs text-black">$34.00</span>
+        </div>
+
+        <div className="w-full px-5">
+          <span className=" text-xs text-[#4F55F1] font-semibold">
+            Add a coucher
+          </span>
+
+          <div className="w-full flex justify-between items-center py-3">
+            <span className=" text-sm text-black">Total</span>
+            <span className=" text-lg text-black font-semibold ">$34.00</span>
+          </div>
+        </div>
+
+        <div className=" w-full flex justify-center md:hidden gap-2 py-12 flex-col px-5">
+          <Link className=" w-full" href={"/tickets"}>
+            <Button
+              size={"sm"}
+              variant={"outline"}
+              className=" w-full text-[#376FFF] hover:text-[#376FFF]"
+            >
+              <CustomImage
+                src="/share.svg"
+                alt="share hhh"
+                className=" w-3.5 h-3.5"
+              />{" "}
+              Pay with Card
             </Button>
-          </div>
+          </Link>
+          <Button size={"sm"} className=" bg-[#303237] hover:bg-[#303237]">
+            <Apple className=" w-4 h-4 text-white" />
+            Pay
+          </Button>
         </div>
 
         <div className=" block md:hidden">

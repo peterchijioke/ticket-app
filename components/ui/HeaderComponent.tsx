@@ -20,6 +20,15 @@ export default function HeaderComponent() {
             </div>
           </div>
         );
+      case "tickets":
+        return (
+          <div className=" relative ">
+            <Bell className=" w-5 h-5 text-[#303237]" />
+            <div className=" rounded-full text-xs  w-4 h-4 items-center text-white dark:text-white justify-center flex left-2  bg-red-500 absolute top-[-14px] mt-1">
+              9
+            </div>
+          </div>
+        );
       case "event":
         return <CustomImage alt="back icon" src={"/HeartIcon.svg"} />;
 

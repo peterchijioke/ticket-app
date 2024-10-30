@@ -179,9 +179,11 @@ export default function EventPage() {
                   </div>
                 </div>
                 <div className="w-full justify-center flex flex-row">
-                  <Button className=" bg-white w-full md:w-1/2 hover:bg-inherit  self-center dark:bg-foreground text-black dark:text-foreground font-semibold">
-                    Get Ticket
-                  </Button>
+                  <Link className="w-full md:w-1/2" href={"/payment"}>
+                    <Button className=" bg-white w-full hover:bg-inherit  self-center dark:bg-foreground text-black dark:text-foreground font-semibold">
+                      Get Ticket
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
