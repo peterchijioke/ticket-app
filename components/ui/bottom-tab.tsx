@@ -3,6 +3,7 @@
  * @see https://v0.dev/t/LKY9I8hy0W5
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
+import { Compass, House, Plus, Search } from "lucide-react";
 import Link from "next/link";
 import { JSX, SVGProps } from "react";
 
@@ -11,31 +12,41 @@ export default function BottomTabComponent() {
     <div className="fixed bottom-0 left-0 right-0 z-50 flex h-16 w-full items-center justify-around border-t bg-white dark:border-gray-800 dark:bg-gray-950">
       <Link
         href="#"
-        className="flex flex-col items-center justify-center gap-1 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+        className="flex flex-col items-center justify-center gap-1 text-xs font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
         prefetch={false}
       >
-        <HomeIcon className="h-6 w-6" />
+        <House className="h-6 w-6" />
         Home
       </Link>
       <Link
         href="#"
-        className="flex flex-col items-center justify-center gap-1 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+        className="flex flex-col text-xs items-center justify-center gap-1 font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
         prefetch={false}
       >
-        <SearchIcon className="h-6 w-6" />
-        Search
+        <Compass className="h-6 w-6" />
+        Discover
       </Link>
       <Link
         href="#"
-        className="flex flex-col items-center justify-center gap-1 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+        className="flex flex-col text-xs items-center justify-center gap-1 font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
         prefetch={false}
       >
-        <BellIcon className="h-6 w-6" />
-        Notifications
+        <div className="h-6 w-6 rounded-full flex items-center justify-center bg-[#4F55F1]">
+          <Plus className=" w-3.5 h-3.5 text-white" />
+        </div>
+        Create
       </Link>
       <Link
         href="#"
-        className="flex flex-col items-center justify-center gap-1 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+        className="flex flex-col text-xs items-center justify-center gap-1 font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+        prefetch={false}
+      >
+        <Search className="h-6 w-6" />
+        Discover
+      </Link>
+      <Link
+        href="#"
+        className="flex flex-col text-xs items-center justify-center gap-1 font-medium text-gray-500 transition-colors hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:text-gray-400 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
         prefetch={false}
       >
         <UserIcon className="h-6 w-6" />
